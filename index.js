@@ -44,10 +44,10 @@ app.get('/', (req, res) => {
     }
     users.find((err, data) => {
         if (data) {
-            console.log(data)
+            console.log(data.length)
         }
     })
-    res.send("Hello")
+    res.render("login")
 })
 
 
